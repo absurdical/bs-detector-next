@@ -24,9 +24,9 @@ Output the result as a VALID JSON object like this:
 Do not include anything outside of the JSON.
 `;
 
-  if (level === "easy") {
+  if (level === "pulp") {
     systemPrompt += "\nBe forgiving and allow for some fluff.";
-  } else if (level === "hard") {
+  } else if (level === "no pulp") {
     systemPrompt += "\nBe extremely strict and allow no fluff at all.";
   } else {
     systemPrompt += "\nBe reasonably strict.";

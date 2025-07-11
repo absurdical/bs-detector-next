@@ -38,13 +38,13 @@ export default function Home() {
       {/* Header */}
       <div className="flex justify-between items-center p-4">
         <div className="space-x-2">
-          {["easy", "medium", "hard"].map((lvl) => (
+          {["pulp", "some pulp", "no pulp"].map((lvl) => (
             <button
               key={lvl}
               onClick={() => setLevel(lvl)}
               className={`px-3 py-1 rounded ${
                 level === lvl
-                  ? "bg-blue-600 text-white"
+                  ? "bg-orange-600 text-white"
                   : "bg-[#444654] text-gray-300 hover:bg-[#555]"
               }`}
             >
@@ -104,7 +104,7 @@ export default function Home() {
             disabled={!text.trim() || loading}
             className={`absolute bottom-2 right-2 h-10 w-10 rounded-full flex items-center justify-center ${
               text.trim() && !loading
-                ? "bg-blue-600 hover:bg-blue-700"
+                ? "bg-orange-600 hover:bg-orange-700"
                 : "bg-gray-600"
             }`}
           >
